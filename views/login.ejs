@@ -1,0 +1,12 @@
+
+<h2 align="center">Login</h2>
+<div align="center" class="login">
+<% if (messages.error) { %><p style="color:red"><%= messages.error %></p><% } %>
+<form action="/login" method="POST">
+    <input name="username" placeholder="Username" required><br><br><br>
+    <input type="password" name="password" placeholder="Password" required><br><br><br>
+    <button type="submit">Login</button>
+</form>
+<br><br>
+<p>Don't have an account? <a href="/register">Register</a></p>
+</div>

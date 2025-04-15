@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+
+  .resume-container {
+    background-color: white;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 90%;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .columns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  h2 {
+    border-bottom: 2px solid #db972f;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    color: #333;
+  }
+
+  p {
+    color: #444;
+    line-height: 1.6;
+    margin: 10px 0;
+    white-space: pre-wrap;
+  }
+
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column;
+    }
+  }

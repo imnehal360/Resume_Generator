@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>ENTER YOUR DETAILS</h1>
+    <form action="/generate" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input name="name" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input name="phone" placeholder="Phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea name="address" placeholder="Address"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="education">Education</label>
+        <textarea name="education" placeholder="Education"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience</label>
+        <textarea name="experience" placeholder="Experience"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills</label>
+        <textarea name="skills" placeholder="Skills"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Layout</label>
+        <div class="radio-group">
+          <label><input type="radio" name="layout" value="one" checked> One Column format</label>
+          <label><input type="radio" name="layout" value="two"> Two Column format</label>
+        </div>
+      </div>
+      <div class="form-full">
+        <button type="submit">Generate</button>
+        <a class="logout" href="/logout">Logout</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

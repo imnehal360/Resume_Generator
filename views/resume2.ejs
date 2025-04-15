@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= resume.name %>'s Resume</title>
+   <link rel="stylesheet" href="resume2.css">
+</head>
+<body>
+  <div class="resume-container">
+    <h1><%= resume.name %></h1>
+    <div class="contact-info">
+      <p><%= resume.email %> | <%= resume.phone %></p>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h2>Education</h2>
+        <p><%= resume.education %></p>
+
+        <h2>Experience</h2>
+        <p><%= resume.experience %></p>
+      </div>
+
+      <div class="column">
+        <h2>Address</h2>
+        <p><%= resume.address %></p>
+
+        <h2>Skills</h2>
+        <p><%= resume.skills %></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
